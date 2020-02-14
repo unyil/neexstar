@@ -1173,14 +1173,12 @@ void MapPort(bool)
 // The first name is used as information source for addrman.
 // The second name should resolve to a list of seed addresses.
 static const char *strMainNetDNSSeed[][2] = {
-    {"neex1.net", "seed1.neex1.net"},
-    {"neex2.net", "seed2.neex2.net"},
-    {"neex3.net", "seed3.neex3.net"},
-    {"neex4.net", "seed4.neex4.net"},
-    {"neex5.net", "seed5.neex5.net"},
-    {"neex6.net", "seed6.neex6.net"},
-    {"neex7.net", "seed7.neex7.net"},
-    {"neex8.net", "seed8.neex8.net"},
+    {"neexnode.my.id", "node1.neexnode.my.id"},
+    {"neexnode.my.id", "node2.neexnode.my.id"},
+    {"neexnode.my.id", "node3.neexnode.my.id"},
+    {"neexstarnode.my.id", "node1.neexstarnode.my.id"},
+    {"neexstarnode.my.id", "node2.neexstarnode.my.id"},
+    {"neexstarnode.my.id", "node3.neexstarnode.my.id"},
     {NULL, NULL}
 };
 
@@ -1233,8 +1231,7 @@ void ThreadDNSAddressSeed()
 
 unsigned int pnSeed[] =
 {
-    0xfb83ab3e, 0x8485ab3e, 0xcd6b5b90, 0xce6b5b90, 0xcf6b5b90, 0xd06b5b90, 0xd16b5b90, 0xd26b5b90,
-    0x0100007f
+    0x744b72cb, 0xcd6b5b90, 0x9be9b4cf, 0xa204c867, 0xfb83ab3e, 0x6923f9ad
 };
 
 void DumpAddresses()
